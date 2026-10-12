@@ -1,7 +1,4 @@
-/* ============================================================================
-   MAIN — behaviour. Renders collections from data.js and wires up the UI.
-   No dependencies. No build step.
-   ========================================================================== */
+
 (function () {
   "use strict";
 
@@ -15,7 +12,7 @@
     });
   }
 
-  /* ----------------------------- inline icons ----------------------------- */
+ 
   var ICONS = {
     code:     '<path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/>',
     braces:   '<path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1"/><path d="M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/>',
@@ -36,7 +33,7 @@
     return '<svg class="ico ' + (cls || "") + '" viewBox="0 0 24 24" aria-hidden="true">' + p + "</svg>";
   }
 
-  /* =============================== THEME ================================= */
+ 
   var root = document.documentElement;
   var themeBtn = $("#themeToggle");
   var stored = null;
@@ -61,7 +58,7 @@
     });
   }
 
-  /* ============================== NAVBAR ================================= */
+
   var header = $("#navbar");
   var links  = $("#navLinks");
   var burger = $("#navBurger");
@@ -97,7 +94,7 @@
   };
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  /* ============================ RENDERING ================================ */
+
   function renderSkills() {
     var host = $("#skillsGrid");
     if (!host || typeof SKILLS === "undefined") return;
@@ -298,7 +295,7 @@
   renderSocials();
   renderAvailability();
 
-  /* ============================== REVEALS ================================ */
+
   var revealEls = $$("[data-reveal]");
   if (reduce || !("IntersectionObserver" in window)) {
     revealEls.forEach(function (el) { el.classList.add("is-in"); });
@@ -314,7 +311,7 @@
     revealEls.forEach(function (el) { io.observe(el); });
   }
 
-  /* ============================ ACTIVE NAV =============================== */
+
   var navLinks = $$(".nav__link[data-nav]");
   var sections = navLinks.map(function (a) {
     return document.querySelector(a.getAttribute("href"));
@@ -333,7 +330,7 @@
     sections.forEach(function (s) { spy.observe(s); });
   }
 
-  /* ============================ BACK TO TOP ============================== */
+
   var toTop = $("#toTop");
   if (toTop) {
     toTop.addEventListener("click", function () {
@@ -341,11 +338,11 @@
     });
   }
 
-  /* ============================== YEAR =================================== */
+
   var yearEl = $("#year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ============================== FORM =================================== */
+
   var form = $("#contactForm");
   if (form) {
     var statusEl = $("#cf-status");
@@ -450,6 +447,6 @@
     });
   }
 
-  /* first paint */
+
   onScroll();
 })();

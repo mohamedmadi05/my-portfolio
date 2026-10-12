@@ -1,48 +1,20 @@
-/* ============================================================================
-   SITE DATA — edit everything from this one file.
-   No build step. Change a value, refresh the page.
 
-   HOW TO UPDATE
-   ─────────────
-   • Personal links / availability ....... SITE below
-   • Contact form delivery ................ SITE.formEndpoint (see README)
-   • Social profiles ...................... SOCIALS below (empty url = hidden)
-   • Skills ............................... SKILLS below
-   • "Learning next" goals ................ LEARNING below
-   • Projects (add / edit / remove) ....... PROJECTS below
-   • Education timeline ................... EDUCATION below
-   • Languages ............................ LANGUAGES below
-   • Interests ............................ INTERESTS below
-   ========================================================================== */
+   
 
 const SITE = {
   name: "Mohamed Madi",
   role: "Digital Development Student · Aspiring Web Developer",
 
-  /* Availability pill in the hero.
-     Set enabled:false to hide it entirely. */
+ 
   availability: {
     enabled: true,
     text: "Open to internship opportunities"
   },
 
-  /* Contact form delivery.
-     Leave as "" to use the built-in mailto fallback (honest: it opens the
-     visitor's email client — no fake "message sent" state).
-     To send for real, paste a form provider endpoint, e.g. Formspree:
-        formEndpoint: "https://formspree.io/f/xxxxxxxx"
-     The form then POSTs the JSON and reports the provider's real response. */
-  formEndpoint: "",
 
-  /* Canonical URL of the deployed site (used in metadata, not required). */
   website: "https://example.com/"
 };
 
-/* ---------------------------------------------------------------------------
-   SOCIAL LINKS
-   Add a url to show the icon; leave url:"" to hide it.
-   Only add profiles that genuinely belong to Mohamed Madi.
-   --------------------------------------------------------------------------- */
 const SOCIALS = [
   {
     id: "linkedin",
@@ -53,14 +25,14 @@ const SOCIALS = [
   {
     id: "github",
     label: "GitHub",
-    /* No GitHub profile confirmed yet — add the URL to reveal the icon. */
+   
     url: "",
     icon: "github"
   },
   {
     id: "email",
     label: "Email",
-    url: "mihamedmadi@gmail.com",
+    url: "mailto:mihamedmadi@gmail.com?subject=Contact%20Me&body=Hello%20Mohamed,",
     icon: "mail"
   },
    {
@@ -78,19 +50,14 @@ const SOCIALS = [
   }
   ,
    {
-    id: "whatsapp",
-    label: "whatsapp",
+    id: "whatsappp",
+    label: "whatsappp",
     url: "https://wa.me/212694708512",
     icon: "whatsapp"
   }
 ];
 
-/* ---------------------------------------------------------------------------
-   SKILLS — categories rendered as premium cards.
-   `mark`  : short monogram shown in the tile
-   `color` : brand colour used for the tile + dot
-   `note`  : honest description of the current level (no percentages!)
-   --------------------------------------------------------------------------- */
+
 const SKILLS = [
   {
     group: "Frontend Development",
@@ -136,12 +103,7 @@ const SKILLS = [
 /* Goals only — deliberately separated from current skills. */
 const LEARNING = ["React", "Git & GitHub", "REST APIs", "Node.js"];
 
-/* ---------------------------------------------------------------------------
-   PROJECTS
-   Each project needs: id, name, tagline, description, tech[], image,
-   status ("practice" | "confirmed"), and optional links.
-   A link with url:"" is hidden automatically (no dead buttons).
-   --------------------------------------------------------------------------- */
+
 const PROJECTS = [
   {
     id: "tamount-store",
@@ -196,9 +158,6 @@ const PROJECTS = [
   }
 ];
 
-/* ---------------------------------------------------------------------------
-   EDUCATION — vertical timeline.
-   --------------------------------------------------------------------------- */
 const EDUCATION = [
   {
     date: "2025 — Present",
@@ -223,12 +182,7 @@ const EDUCATION = [
   }
 ];
 
-/* ---------------------------------------------------------------------------
-   LANGUAGES — levels exactly as stated, not upgraded.
-   `dots` is a plain 1–5 visual indicator derived from the stated level
-   (Native 5, Advanced 4, B2 3, B1 2). It is a presentation choice, not a
-   claim of a CEFR score beyond the level shown.
-   --------------------------------------------------------------------------- */
+
 const LANGUAGES = [
   { symbol: "ⵣ",  name: "Tamazight", level: "Native",   detail: "",              dots: 5 },
   { symbol: "ع",  name: "Arabic",    level: "Advanced", detail: "",              dots: 4 },
@@ -236,9 +190,7 @@ const LANGUAGES = [
   { symbol: "FR", name: "French",    level: "B1",       detail: "Rosetta Stone", dots: 2 }
 ];
 
-/* ---------------------------------------------------------------------------
-   INTERESTS — icons: code | spark | ball
-   --------------------------------------------------------------------------- */
+
 const INTERESTS = [
   { icon: "code",  text: "Web development and personal computing projects" },
   { icon: "spark", text: "Technology news and learning new programming languages" },
