@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img"
+     aria-label="Placeholder mockup for the interactive counter and calculator project — not a real screenshot">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/><stop offset="1" stop-color="#070A12"/>
+    </linearGradient>
+    <linearGradient id="acc2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <rect width="1200" height="750" fill="url(#grid2)"/>
+  <circle cx="210" cy="140" r="230" fill="#22D3EE" opacity="0.09"/>
+  <circle cx="1020" cy="640" r="240" fill="#8B5CF6" opacity="0.10"/>
+
+  <!-- counter card -->
+  <rect x="90" y="150" width="430" height="450" rx="22" fill="#0D1424" stroke="#ffffff" stroke-opacity="0.10"/>
+  <rect x="120" y="184" width="150" height="14" rx="7" fill="#98A5BD" fill-opacity="0.5"/>
+  <rect x="240" y="250" width="130" height="96" rx="16" fill="url(#acc2)" opacity="0.16"/>
+  <text x="305" y="322" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="54" font-weight="600" fill="#E9EEF9">42</text>
+  <g>
+    <rect x="165" y="392" width="86" height="58" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.10"/>
+    <rect x="267" y="392" width="86" height="58" rx="14" fill="url(#acc2)" opacity="0.85"/>
+    <rect x="369" y="392" width="86" height="58" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.10"/>
+  </g>
+  <text x="308" y="428" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="600" fill="#04070F">+</text>
+  <text x="208" y="429" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="600" fill="#E9EEF9">−</text>
+  <text x="412" y="429" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#E9EEF9">0</text>
+  <rect x="165" y="480" width="290" height="46" rx="14" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="200" y="498" width="220" height="10" rx="5" fill="#98A5BD" fill-opacity="0.45"/>
+
+  <!-- calculator card -->
+  <rect x="580" y="150" width="530" height="450" rx="22" fill="#0D1424" stroke="#ffffff" stroke-opacity="0.10"/>
+  <rect x="612" y="184" width="466" height="86" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="1050" y="240" text-anchor="end" font-family="JetBrains Mono, Consolas, monospace" font-size="40" font-weight="600" fill="#22D3EE">128 × 4</text>
+  <rect x="1046" y="196" width="30" height="3" rx="1.5" fill="#22D3EE"/>
+
+  <g>
+    <!-- keypad 4 x 5 -->
+    <!-- rows y: 300, 372, 444, 516 -->
+    <g fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.08">
+      <rect x="612" y="300" width="106" height="60" rx="12"/><rect x="730" y="300" width="106" height="60" rx="12"/>
+      <rect x="848" y="300" width="106" height="60" rx="12"/><rect x="966" y="300" width="112" height="60" rx="12"/>
+      <rect x="612" y="372" width="106" height="60" rx="12"/><rect x="730" y="372" width="106" height="60" rx="12"/>
+      <rect x="848" y="372" width="106" height="60" rx="12"/><rect x="966" y="372" width="112" height="60" rx="12"/>
+      <rect x="612" y="444" width="106" height="60" rx="12"/><rect x="730" y="444" width="106" height="60" rx="12"/>
+      <rect x="848" y="444" width="106" height="60" rx="12"/><rect x="966" y="444" width="112" height="60" rx="12"/>
+      <rect x="612" y="516" width="106" height="60" rx="12"/><rect x="730" y="516" width="106" height="60" rx="12"/>
+      <rect x="848" y="516" width="106" height="60" rx="12"/>
+    </g>
+    <rect x="966" y="516" width="112" height="60" rx="12" fill="url(#acc2)" opacity="0.9"/>
+  </g>
+
+  <text x="90" y="726" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#6B7891" letter-spacing="2">
+    INTERACTIVE COUNTER &amp; CALCULATOR — MOCKUP PLACEHOLDER
+  </text>
+</svg>

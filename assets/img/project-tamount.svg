@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img"
+     aria-label="Placeholder mockup for the Tamount Store e-commerce project — not a real screenshot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/><stop offset="1" stop-color="#070A12"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F7CFF"/><stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+  <circle cx="1010" cy="120" r="220" fill="#4F7CFF" opacity="0.10"/>
+  <circle cx="150" cy="690" r="200" fill="#22D3EE" opacity="0.07"/>
+
+  <!-- app window -->
+  <rect x="70" y="70" width="1060" height="610" rx="18" fill="#0D1424" stroke="#ffffff" stroke-opacity="0.10"/>
+  <rect x="70" y="70" width="1060" height="56" rx="18" fill="#101828"/>
+  <rect x="70" y="108" width="1060" height="18" fill="#101828"/>
+  <circle cx="104" cy="98" r="7" fill="#FF5F57"/><circle cx="128" cy="98" r="7" fill="#FEBC2E"/><circle cx="152" cy="98" r="7" fill="#28C840"/>
+  <rect x="196" y="88" width="300" height="20" rx="10" fill="#ffffff" fill-opacity="0.06"/>
+  <rect x="1010" y="86" width="96" height="24" rx="12" fill="url(#acc)" opacity="0.85"/>
+
+  <!-- storefront heading -->
+  <rect x="110" y="170" width="330" height="26" rx="8" fill="#E9EEF9" fill-opacity="0.85"/>
+  <rect x="110" y="212" width="210" height="14" rx="7" fill="#98A5BD" fill-opacity="0.5"/>
+
+  <!-- cart badge -->
+  <circle cx="1052" cy="196" r="26" fill="url(#acc)" opacity="0.9"/>
+  <path d="M1040 188h24l-3 15h-16z" fill="#04070F" opacity="0.85"/>
+  <circle cx="1046" cy="209" r="3.2" fill="#04070F"/><circle cx="1057" cy="209" r="3.2" fill="#04070F"/>
+
+  <!-- product grid -->
+  <g>
+    <rect x="110" y="270" width="230" height="160" rx="14" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="130" y="290" width="190" height="80" rx="10" fill="url(#acc)" opacity="0.20"/>
+    <rect x="130" y="386" width="120" height="12" rx="6" fill="#E9EEF9" fill-opacity="0.55"/>
+    <rect x="130" y="406" width="70" height="12" rx="6" fill="#4F7CFF" opacity="0.85"/>
+
+    <rect x="370" y="270" width="230" height="160" rx="14" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="390" y="290" width="190" height="80" rx="10" fill="url(#acc)" opacity="0.20"/>
+    <rect x="390" y="386" width="140" height="12" rx="6" fill="#E9EEF9" fill-opacity="0.55"/>
+    <rect x="390" y="406" width="60" height="12" rx="6" fill="#4F7CFF" opacity="0.85"/>
+
+    <rect x="630" y="270" width="230" height="160" rx="14" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="650" y="290" width="190" height="80" rx="10" fill="url(#acc)" opacity="0.20"/>
+    <rect x="650" y="386" width="110" height="12" rx="6" fill="#E9EEF9" fill-opacity="0.55"/>
+    <rect x="650" y="406" width="80" height="12" rx="6" fill="#4F7CFF" opacity="0.85"/>
+
+    <rect x="890" y="270" width="200" height="160" rx="14" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="910" y="290" width="160" height="80" rx="10" fill="url(#acc)" opacity="0.20"/>
+    <rect x="910" y="386" width="120" height="12" rx="6" fill="#E9EEF9" fill-opacity="0.55"/>
+    <rect x="910" y="406" width="54" height="12" rx="6" fill="#4F7CFF" opacity="0.85"/>
+  </g>
+
+  <!-- admin row -->
+  <rect x="110" y="470" width="980" height="160" rx="14" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.07"/>
+  <rect x="140" y="500" width="180" height="16" rx="8" fill="#E9EEF9" fill-opacity="0.55"/>
+  <g fill="#98A5BD" fill-opacity="0.4">
+    <rect x="140" y="540" width="920" height="10" rx="5"/>
+    <rect x="140" y="566" width="920" height="10" rx="5"/>
+    <rect x="140" y="592" width="700" height="10" rx="5"/>
+  </g>
+
+  <text x="70" y="726" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#6B7891" letter-spacing="2">
+    TAMOUNT STORE — MOCKUP PLACEHOLDER
+  </text>
+</svg>
